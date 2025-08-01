@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from "react-awesome-reveal";
 import icon1 from '../../../images/icon/check-mark.png';
 import hImg1 from '../../../images/pastWork/softTrade_img.png';
-import logo from '../../../images/pastWork/png logo.png';
+// import logo from '../../../images/pastWork/png logo.png';
 // import { Link } from 'react-router-dom';
 
 // const ClickHandler = () => {
@@ -15,11 +15,11 @@ const CustomERP = () => {
             <div className="container">
                 <div className="hero_wrap">
                     <div className="row align-items-center">
-                         <div className='col-lg-12 col-md-12 col-sm-12 text-center'>
+                         {/* <div className='col-lg-12 col-md-12 col-sm-12 text-center'>
                          <Fade direction='up' triggerOnce={false} duration={1000} delay={9}>
                                     <div className="customERP_logo"><img src={logo} alt="logo_image" width={250} /></div>
                                 </Fade>
-                         </div>
+                         </div> */}
                         <div className='col-lg-6 col-md-6 col-sm-12'>
                             <div className="cta-sec-title">
                                
