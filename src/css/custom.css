@@ -763,3 +763,10 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
     line-height: 20px;
     color: black;
 }
+
+.support-list-heading{
+  font-size: 16px;
+}
+.support-list-span{
+  font-size: 15px;
+}
