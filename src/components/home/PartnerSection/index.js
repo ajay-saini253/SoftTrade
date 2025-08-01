@@ -53,12 +53,7 @@ import pimg31 from "../../../images/partner/icons/whitelion.png";
   { pImg: pimg13, name: "Pinkcity Group (PCG) – Since 1980, Jaipur" },
   { pImg: pimg14, name: "Tirupati Canvassing Agent – Since 1987, Jalna, MH" },
   { pImg: pimg15, name: "B.M Canvassing" },
-  
-];
-
-
-const partners1 = [
-  { pImg: pimg16, name: "BS Jain & Co. – Coimbatore" },
+   { pImg: pimg16, name: "BS Jain & Co. – Coimbatore" },
   { pImg: pimg17, name: "Adinath Brokers (Canvassing Agent) – Aurangabad" },
   { pImg: pimg18, name: "Raphelite – Jaipur" },
   { pImg: pimg19, name: "Chhaju Ram & Co. (CRCQ) – Ludhiana (Since 1971)" },
@@ -74,21 +69,41 @@ const partners1 = [
   { pImg: pimg29, name: "R. Sons Group – Since 1989" },
   { pImg: pimg30, name: "Soham Rock Star Entertainment" },
   { pImg: pimg31, name: "Whitelion" }
+];
 
-]
+
+// const partners1 = [
+//   { pImg: pimg16, name: "BS Jain & Co. – Coimbatore" },
+//   { pImg: pimg17, name: "Adinath Brokers (Canvassing Agent) – Aurangabad" },
+//   { pImg: pimg18, name: "Raphelite – Jaipur" },
+//   { pImg: pimg19, name: "Chhaju Ram & Co. (CRCQ) – Ludhiana (Since 1971)" },
+//   { pImg: pimg20, name: "R. Chunnilal & Co. – Surat" },
+//   { pImg: pimg21, name: "Anand Pandit – Motion Pictures" },
+//   { pImg: pimg22, name: "Tadkeshwar Agro Food Product" },
+//   { pImg: pimg23, name: "Hindustan Wheat Brokers – Coimbatore" },
+//   { pImg: pimg24, name: "KFC Entertainment" },
+//   { pImg: pimg25, name: "Kedawat Refoils" },
+//   { pImg: pimg26, name: "Pen Marudhar Cine Entertainment" },
+//   { pImg: pimg27, name: "MKS – Mahaveer Kirana Store" },
+//   { pImg: pimg28, name: "Prakash Films (PF)" },
+//   { pImg: pimg29, name: "R. Sons Group – Since 1989" },
+//   { pImg: pimg30, name: "Soham Rock Star Entertainment" },
+//   { pImg: pimg31, name: "Whitelion" }
+
+// ]
 
 const baseSliderSettings = {
   dots: false,
   infinite: true,
   speed: 2000,
- slidesToShow: 4,
+ slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 0,
   cssEase: "linear",
   arrows: false,
   responsive: [
-    { breakpoint: 1025, settings: { slidesToShow: 4, slidesToScroll: 1 } },
+    { breakpoint: 1025, settings: { slidesToShow: 5, slidesToScroll: 1 } },
     { breakpoint: 991, settings: { slidesToShow: 3, slidesToScroll: 1 } },
     { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1 } },
     // { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
@@ -96,10 +111,10 @@ const baseSliderSettings = {
   ],
 };
 
-const rtlSliderSettings = {
-  ...baseSliderSettings,
-  rtl: true,
-};
+// const rtlSliderSettings = {
+//   ...baseSliderSettings,
+//   rtl: true,
+// };
 
 const PartnerSection = () => {
   return (
@@ -118,7 +133,7 @@ const PartnerSection = () => {
             <Slider {...baseSliderSettings}>
               {partners.map((partner, index) => (
                 <div className="brand-logo text-center" key={index}>
-                  <img src={partner.pImg} className="" alt={`Client ${index}`}  style={{ display: "inline-block", height:"90px" ,width:"auto" }} />
+                  <img src={partner.pImg} className="" alt={`Client ${index}`}  style={{ display: "inline-block", height:"120px" ,width:"auto" }} />
                   <p className="pt-2 text-black partner-brand-name">{partner.name}</p>
                 </div>
               ))}
@@ -126,16 +141,16 @@ const PartnerSection = () => {
           </div>
 
           {/* Second Slider - Right to Left */}
-          <div className="brand-wrap brand-marquee mt-5 mx-3">
+          {/* <div className="brand-wrap brand-marquee mt-5 mx-3">
             <Slider {...rtlSliderSettings}>
               {partners1.map((partner, index) => (
                  <div className="brand-logo text-center" key={index}>
-                   <img src={partner.pImg} className="" alt={`Client ${index}`}  style={{ display: "inline-block", height:"90px" ,width:"auto" }} />
+                   <img src={partner.pImg} className="" alt={`Client ${index}`}  style={{ display: "inline-block", height:"120px" ,width:"auto" }} />
                   <p className="pt-2 text-black partner-brand-name">{partner.name}</p>
                 </div>
               ))}
             </Slider>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

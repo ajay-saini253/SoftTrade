@@ -87,7 +87,7 @@ const CustomERP = () => {
                             </div>
                         </div>
 
-                       <div className=" col-lg-6 mt-30">
+                       <div className=" col-lg-6 mt-sm-3">
                             <div className="hero-right_img pos-rel">
                                 <div className="hero-right-image">
                                        <Fade direction='up' triggerOnce={false} duration={900} delay={2}>
