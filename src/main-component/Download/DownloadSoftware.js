@@ -15,7 +15,7 @@ const DownloadSoftware = () => {
                                             <th>Software</th>
                                             <th>Release Date</th>
                                             <th>System</th>
-                                            <th>Download</th>
+                                            <th>Download Software</th>
                                         </tr>
                                     </thead>
                                     <tbody>
