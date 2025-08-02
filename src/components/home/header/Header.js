@@ -427,8 +427,18 @@ const Header = () => {
 
                   {/* Download */}
 
-                  <li className="menu-item-has-children megamenu">
-                    <Link onClick={clickHandler} to="/download">Download</Link>          
+                
+
+                  <li className="menu-item-has-children">
+                    <Link onClick={clickHandler} to="/download">Download</Link>
+                    <ul className="submenu">
+                       <li><Link onClick={clickHandler} to="/"><span>Partner Overview</span></Link></li>
+                      <li><Link onClick={clickHandler} to="/"><span>Partner Login</span></Link></li>  
+                      <li><Link onClick={clickHandler} to="/"><span>Partner Overview</span></Link></li>
+                      <li><Link onClick={clickHandler} to="/"><span>Partner Login</span></Link></li>
+                      <li><Link onClick={clickHandler} to="/"><span>Partner Overview</span></Link></li>
+                      <li><Link onClick={clickHandler} to="/"><span>Partner Login</span></Link></li>
+                    </ul>
                   </li>
                   {/* Resources */}
 

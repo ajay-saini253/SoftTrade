@@ -2,7 +2,7 @@ import React from 'react';
 import icon1 from '../../images/icon/check-mark.png';
 import { Link } from 'react-router-dom';
 import product1 from '../../images/desktop-software/plus.webp'
-import pdf from '../../images/desktop-software/pdf.png'
+// import pdf from '../../images/desktop-software/pdf.png'
 
 const DesktopProducts = () => {
   return (

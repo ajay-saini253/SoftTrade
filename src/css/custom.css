@@ -430,7 +430,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 
 /* hero Download section */
 
-.hero-download-section-button-prev,
+/* .hero-download-section-button-prev,
 .hero-download-section-button-next {
   position: absolute;
   bottom: -45px;
@@ -449,7 +449,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
   font-size: 16px;
 }
 
-/* Align prev/next to left and right at the bottom */
+
 .hero-download-section-button-prev {
   left: 40%;
   transform: translateX(-100%);
@@ -460,7 +460,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
   transform: translateX(100%);
 }
 
-/* Hover */
+
 .hero-download-section-button-prev:hover,
 .hero-download-section-button-next:hover {
   background-color: #1c1f33;
@@ -481,11 +481,11 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
   .hero-download-section-button-next {
     right: 35%;
   }
-}
+} */
 
 /* custom trusted customer */
 
-.trustrd-customer-container{
+ .trustrd-customer-container{
      background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
@@ -505,7 +505,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 }
 
 .trusted-customer-item {
-  /* margin-bottom: 20px; */
+
   border-right: 1px dotted #7c7d7ea8;
 }
 
@@ -532,8 +532,6 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
     }
   .trusted-customer-item {
     border-right: none;
-    /* border-bottom: 1px solid #038f8e;
-    border-right: 1px solid #038f8e; */
     padding: 15px 10px ;
     margin-bottom: 0;
   }
@@ -551,7 +549,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
   }
 
 
-}
+} 
 
 
 /* desktop products */
