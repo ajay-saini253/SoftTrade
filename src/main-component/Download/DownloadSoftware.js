@@ -11,8 +11,8 @@ const DownloadSoftware = () => {
                                 <table className="table table-bordered table-striped text-center align-middle">
                                    <thead>
                                         <tr>
-                                            <th>Serial No.</th>
-                                            <th>Software</th>
+                                            <th>Software Name</th>
+                                            <th>Software Version</th>
                                             <th>Release Date</th>
                                             <th>System</th>
                                             <th>Download Software</th>
@@ -20,8 +20,8 @@ const DownloadSoftware = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>App Manager v1.0</td>
+                                            <td>mandi Software</td>
+                                            <td>ERP Software</td>
                                             <td>2025-07-15</td>
                                             <td>Windows</td>
                                             <td>
