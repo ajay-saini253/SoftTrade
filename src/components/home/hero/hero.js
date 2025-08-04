@@ -55,7 +55,7 @@ const Hero = () => {
               </SwiperSlide>
             </Swiper>
           </div>
-          hello
+     
         </div>
       </section>
     </>

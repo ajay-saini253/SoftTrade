@@ -1,11 +1,12 @@
 {
-  "name": "soft_trade",
+  "name": "soft-trade",
   "version": "0.1.0",
-  "homepage": "https://softtradeindia.com",
+  "homepage": "https://softtrade.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@hookform/resolvers": "^5.2.1",
     "@mui/material": "^5.11.0",
     "@mui/styled-engine-sc": "^5.11.0",
     "@studio-freight/react-lenis": "^0.0.37",
@@ -21,6 +22,7 @@
     "react-datepicker": "^6.9.0",
     "react-dom": "^18.0.0",
     "react-fast-marquee": "^1.6.5",
+    "react-hook-form": "^7.62.0",
     "react-icons": "^5.5.0",
     "react-modal-video": "^2.0.1",
     "react-responsive-masonry": "^2.1.7",
@@ -33,11 +35,11 @@
     "reactstrap": "^9.1.9",
     "sass": "^1.62.1",
     "simple-parallax-js": "^5.6.2",
-    "simple-react-validator": "^1.6.2",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.10",
     "web-vitals": "^2.1.4",
-    "yet-another-react-lightbox": "^3.12.3"
+    "yet-another-react-lightbox": "^3.12.3",
+    "yup": "^1.7.0"
   },
   "scripts": {
     "start": "react-scripts start",

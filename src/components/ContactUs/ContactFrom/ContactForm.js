@@ -1,140 +1,91 @@
-import React, { useState } from 'react'
-import SimpleReactValidator from 'simple-react-validator';
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
+const schema = yup.object().shape({
+  name: yup.string().required('Name is required').matches(/^[aA-zZ\s]+$/, 'Only letters and spaces are allowed'),
+  email: yup.string().email('Invalid email format').required('Email is required'),
+  phone: yup.string().required('Phone is required').matches(/^[0-9()+-\s]+$/, 'Invalid phone number'),
+  company: yup.string().required('Company name is required'),
+  address: yup.string().required('Address is required'),
+  country: yup.string().required('Country is required'),
+  message: yup.string().required('Message is required'),
+});
 
-const ContactForm = (props) => {
+const ContactForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
-    const [forms, setForms] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        phone: '',
-        company: '',
-        address:'',
-        country: '',
-        message: ''
-    });
-    const [validator] = useState(new SimpleReactValidator({
-        className: 'errorMessage'
-    }));
-    const changeHandler = e => {
-        setForms({ ...forms, [e.target.name]: e.target.value })
-        if (validator.allValid()) {
-            validator.hideMessages();
-        } else {
-            validator.showMessages();
-        }
-    };
+  const onSubmit = (data) => {
+    console.log('Form Submitted:', data);
+    reset(); // Reset form after submission
+  };
 
-    const submitHandler = e => {
-        e.preventDefault();
-        if (validator.allValid()) {
-            validator.hideMessages();
-            setForms({
-                name: '',
-                email: '',
-                subject: '',
-                phone: '',
-                company: '',
-                address:'',
-                country: '',
-                message: ''
-            })
-        } else {
-            validator.showMessages();
-        }
-    };
+  return (
+    <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+      <div className="row">
+        <div className="col-lg-6">
+          <div className="input-field">
+            <label>Your name</label>
+            <div className="input-box">
+              <input type="text" className="form-control" {...register('name')} />
+              <p className="errorMessage">{errors.name?.message}</p>
+            </div>
+          </div>
+        </div>
 
-    return (
-        <form className="contact-form" onSubmit={(e) => submitHandler(e)}>
-            <div className="row">
-                <div className="col-lg-6">
-                    <div className="input-field">
-                        <label htmlFor="text1">Your name</label>
-                        <div className="input-box">
-                            <input
-                                value={forms.name}
-                                type="text"
-                                name="name"
-                                className="form-control"
-                                onBlur={(e) => changeHandler(e)}
-                                onChange={(e) => changeHandler(e)} />
-                        </div>
-                    </div>
-                    {validator.message('name', forms.name, 'required|alpha_space')}
-                </div>
-                <div className="col-lg-6">
-                    <div className="input-field">
-                        <label htmlFor="text2">Email</label>
-                        <div className="input-box">
-                            <input
-                                value={forms.email}
-                                type="email"
-                                name="email"
-                                className="form-control"
-                                onBlur={(e) => changeHandler(e)}
-                                onChange={(e) => changeHandler(e)} />
-                        </div>
-                    </div>
-                    {validator.message('email', forms.email, 'required|email')}
-                </div>
-                <div className="col-lg-6">
-                    <div className="input-field">
-                        <label htmlFor="text3">Phone</label>
-                        <div className="input-box">
-                            <input
-                                value={forms.phone}
-                                type="phone"
-                                name="phone"
-                                className="form-control"
-                                onBlur={(e) => changeHandler(e)}
-                                onChange={(e) => changeHandler(e)} />
-                        </div>
-                    </div>
-                    {validator.message('phone', forms.phone, 'required|phone')}
-                </div>
-                <div className="col-lg-6">
-                    <div className="input-field">
-                        <label htmlFor="text4">Company name</label>
-                        <div className="input-box">
-                            <input
-                                value={forms.company}
-                                type="company"
-                                name="company"
-                                className="form-control"
-                                onBlur={(e) => changeHandler(e)}
-                                onChange={(e) => changeHandler(e)} />
-                        </div>
-                    </div>
-                    {validator.message('company', forms.company, 'required|company')}
-                </div>
-                <div className="col-lg-8">
-                    <div className="input-field text-field">
-                        <label htmlFor="text5">Address</label>
-                        <div className="input-box">
-                            <input
-                                 value={forms.address}
-                                type="address"
-                                name="compaddressany"
-                                className="form-control"
-                                onBlur={(e) => changeHandler(e)}
-                                onChange={(e) => changeHandler(e)}
-                             />
-                        </div>
-                    </div>
-                    {validator.message('address', forms.address, 'required')}
-                </div>
-                <div className="col-lg-4">
-    <div className="input-field text-field">
-        <label htmlFor="country">Country</label>
-        <div className="input-box">
-            <select
-                name="country"
-                className="form-control"
-                value={forms.country || ''}
-                onChange={changeHandler}
-                onBlur={changeHandler}
-            >
+        <div className="col-lg-6">
+          <div className="input-field">
+            <label>Email</label>
+            <div className="input-box">
+              <input type="email" className="form-control" {...register('email')} />
+              <p className="errorMessage">{errors.email?.message}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-lg-6">
+          <div className="input-field">
+            <label>Phone</label>
+            <div className="input-box">
+              <input type="text" className="form-control" {...register('phone')} />
+              <p className="errorMessage">{errors.phone?.message}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-lg-6">
+          <div className="input-field">
+            <label>Company name</label>
+            <div className="input-box">
+              <input type="text" className="form-control" {...register('company')} />
+              <p className="errorMessage">{errors.company?.message}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-lg-8">
+          <div className="input-field text-field">
+            <label>Address</label>
+            <div className="input-box">
+              <input type="text" className="form-control" {...register('address')} />
+              <p className="errorMessage">{errors.address?.message}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-lg-4">
+          <div className="input-field text-field">
+            <label>Country</label>
+            <div className="input-box">
+              <select className="form-control" {...register('country')}>
                 <option value="">Select Country</option>
                 <option value="India">India</option>
                 <option value="United States">United States</option>
@@ -148,35 +99,30 @@ const ContactForm = (props) => {
                 <option value="Japan">Japan</option>
                 <option value="Brazil">Brazil</option>
                 <option value="South Africa">South Africa</option>
-                {/* Add more as needed */}
-            </select>
+              </select>
+              <p className="errorMessage">{errors.country?.message}</p>
+            </div>
+          </div>
         </div>
-    </div>
-    {validator.message('country', forms.country, 'required')}
-</div>
 
-                <div className="col-lg-12">
-                    <div className="input-field text-field">
-                        <label htmlFor="text6">How can we help you today?</label>
-                        <div className="input-box">
-                            <textarea
-                                onBlur={(e) => changeHandler(e)}
-                                onChange={(e) => changeHandler(e)}
-                                value={forms.message}
-                                type="text"
-                                name="message"
-                                className="form-control">
-                            </textarea>
-                        </div>
-                    </div>
-                    {validator.message('message', forms.message, 'required')}
-                </div>
+        <div className="col-lg-12">
+          <div className="input-field text-field">
+            <label>How can we help you today?</label>
+            <div className="input-box">
+              <textarea className="form-control" {...register('message')} />
+              <p className="errorMessage">{errors.message?.message}</p>
             </div>
-            <div className="contact-btn">
-                <button className="cp-btn w-100" type='submit'>Submit<i className="fal fa-arrow-right"></i></button>
-            </div>
-        </form>
-    )
-}
+          </div>
+        </div>
+      </div>
+
+      <div className="contact-btn">
+        <button className="cp-btn w-100" type="submit">
+          Submit <i className="fal fa-arrow-right"></i>
+        </button>
+      </div>
+    </form>
+  );
+};
 
 export default ContactForm;
