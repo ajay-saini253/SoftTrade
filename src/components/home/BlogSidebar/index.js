@@ -50,23 +50,23 @@ const BlogSidebar = (props) => {
                         ))}
                     </ul>
                 </div>
-             <div className="sidebar_widget">
-    <h3 className="sidebar_widget_title">Tags</h3>
-    <ul className="tags_block list-unstyled">
-        <li><Link onClick={ClickHandler} to="/blog">ERP</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Cloud ERP</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Mobile ERP</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Web ERP</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Desktop ERP</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Business Automation</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Inventory Management</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Billing Solutions</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">CRM</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">HR Management</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Accounts</Link></li>
-        <li><Link onClick={ClickHandler} to="/blog">Data Insights</Link></li>
-    </ul>
-</div>
+                <div className="sidebar_widget">
+                    <h3 className="sidebar_widget_title">Tags</h3>
+                    <ul className="tags_block list-unstyled">
+                        <li><Link onClick={ClickHandler} to="/blog">ERP</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Cloud ERP</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Mobile ERP</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Web ERP</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Desktop ERP</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Business Automation</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Inventory Management</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Billing Solutions</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">CRM</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">HR Management</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Accounts</Link></li>
+                        <li><Link onClick={ClickHandler} to="/blog">Data Insights</Link></li>
+                    </ul>
+                </div>
 
             </div>
         </div>

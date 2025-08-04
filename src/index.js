@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from '../src/main-component/App/App';
+import App from '../src/pages/App/App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/react-modal-video/scss/modal-video.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';

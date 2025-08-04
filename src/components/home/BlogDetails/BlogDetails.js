@@ -3,29 +3,21 @@ import blogs from '../../../api/blogs';
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom'
 import BlogSidebar from '../BlogSidebar';
-// import blog1 from '../../../images/service/cd-image.jpg'
 import blog2 from '../../../images/blog/blog_details-img01.jpg'
 import blog3 from '../../../images/blog/blog_details-img02.jpg'
 import blog4 from '../../../images/blog/blog_details-img03.jpg'
 import blog5 from '../../../images/blog/blog_details-img04.jpg'
-
 import icon1 from '../../../images/icon/icon_calendar.svg'
 import icon2 from '../../../images/icon/user-black.svg'
 import icon3 from '../../../images/icon/icon_comment.svg'
 import icon4 from '../../../images/icon/icon_eye.svg'
 import icon5 from '../../../images/icon/icon_link.svg'
 import icon6 from '../../../images/icon/icon_bookmark.svg'
-// import icon7 from '../../../images/icon/icon-left.png'
-// import icon8 from '../../../images/icon/profile-circle.svg'
-// import icon9 from '../../../images/icon/icon-right.png'
 
 
 const BlogSingle = (props) => {
-
     const { slug } = useParams()
-
     const BlogDetails = blogs.find(item => item.slug === slug)
-
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
@@ -109,13 +101,7 @@ const BlogSingle = (props) => {
                 <div className="row mt-none-30 g-0 align-items-start">
                     <div className="col-lg-8 mt-30">
                         <div className="blog_details_content">
-                            {/* <div className="post_audio">
-                                <button className="audio_play_btn" type="button">
-                                    <i className="fas fa-play"></i>
-                                    <span>6:24</span>
-                                    <span>Listen to this article!</span>
-                                </button>
-                            </div> */}
+
                             <h3 className="item_details_info_heading">
                                 Revolutionizing business efficiency navigating growth <br /> with optimal IT infrastructure enhancement
                             </h3>
@@ -236,44 +222,6 @@ const BlogSingle = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            {/* <div className="other_post_nav ul_li_between">
-                                <Link onClick={ClickHandler} to={'/blog'} className="post-nav-item">
-                                    <div className="xb-item--arrow pos-rel">
-                                        <img src={icon7} alt="" />
-                                        <span></span>
-                                    </div>
-                                    <div className="xb-item--holder">
-                                        <h3 className="xb-item--title">Exploring IT solutions <br /> ..with SoftTrade</h3>
-                                        <span className="xb-item--text"><img src={icon8} alt="" />Christopher</span>
-                                    </div>
-                                </Link>
-                                <Link onClick={ClickHandler} to={'/blog'} className="xb-bar">
-                                    <i className="fas fa-th-large"></i>
-                                </Link>
-                                <Link onClick={ClickHandler} to={'/blog'} className="post-nav-item">
-                                    <div className="xb-item--holder">
-                                        <h3 className="xb-item--title">Measuring SEO success <br /> key metrics tools..</h3>
-                                        <span className="xb-item--text"><img src={icon8} alt="" />Michael</span>
-                                    </div>
-                                    <div className="xb-item--arrow pos-rel">
-                                        <img src={icon9} alt="" />
-                                        <span></span>
-                                    </div>
-                                </Link>
-                            </div> */}
-                            {/* <div className="item_details-newslatter">
-                                <div className="xb-item--holder ul_li_between align-items-start">
-                                    <div className="xb-item-heading_info">
-                                        <h3 className="item_details_info_heading">Subscribe to our updates</h3>
-                                        <p>Stay up to date! Get all of our resources and news <br /> delivered straight to your inbox.</p>
-                                    </div>
-                                    <span className="xb-item--bell-icon"><i className="fas fa-bell"></i></span>
-                                </div>
-                                <div className="xb-item--item-input_field pos-rel">
-                                    <input type="email" placeholder="SoftTrade@example .com" />
-                                    <button type="submit">Subscribe</button>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                     <BlogSidebar />

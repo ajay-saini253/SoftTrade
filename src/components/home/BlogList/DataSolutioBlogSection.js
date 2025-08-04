@@ -1,8 +1,7 @@
 import React from 'react'
 import blogs from '../../../api/blogs'
 import { Link } from 'react-router-dom'
-// import Bg from '../../../images/bg/da-blog_bg.png'
- import cta2 from '../../../images/pastWork/weberp_bg.webp'
+import cta2 from '../../../images/pastWork/weberp_bg.webp'
 import { Fade } from "react-awesome-reveal";
 
 const DataSolutioBlogSection = (props) => {

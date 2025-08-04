@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-// import icon from '../../../images/icon/magic-black.svg';
 import icon1 from '../../../images/feature/img02.png';
 import icon2 from '../../../images/feature/img01.png';
 

@@ -17,30 +17,30 @@ const InvestmentSection = () => {
       style={{ backgroundColor: "#f9f9f9" }}
     >
       <div className="container py-5">
-        
+
         {/* Heading */}
         <Fade direction="up" triggerOnce={false} duration={1000}>
-        <div className="text-center mb-4">
-          <h2 className="section-title">
-            Start your online business with the least investment <br />
-            and reach the largest possible consumer base
-          </h2>
-        </div>
-    </Fade>   
+          <div className="text-center mb-4">
+            <h2 className="section-title">
+              Start your online business with the least investment <br />
+              and reach the largest possible consumer base
+            </h2>
+          </div>
+        </Fade>
 
         <div className="hero-content-wrapper">
           <div className="row align-items-center mt-4">
             {/* Left Column: Image */}
             <div className="col-xl-6 col-lg-6 mb-4 mb-lg-0">
-               <Fade direction="left" triggerOnce={false} duration={1000}>
-              <div className="hero-image-container position-relative">
-                <img
-                  className="img-fluid rounded-4 fadeInLeft"
-                  src={hImg1}
-                  alt="ONDC Partnership Banner"
-                  data-duration=".7s"
-                />
-              </div>
+              <Fade direction="left" triggerOnce={false} duration={1000}>
+                <div className="hero-image-container position-relative">
+                  <img
+                    className="img-fluid rounded-4 fadeInLeft"
+                    src={hImg1}
+                    alt="ONDC Partnership Banner"
+                    data-duration=".7s"
+                  />
+                </div>
               </Fade>
             </div>
 
@@ -67,7 +67,7 @@ const InvestmentSection = () => {
                   </div>
                 </Fade>
 
-                  <Fade
+                <Fade
                   direction="up"
                   triggerOnce={false}
                   duration={1400}
@@ -80,24 +80,24 @@ const InvestmentSection = () => {
                       data-wow-delay="450ms"
                       data-wow-duration="600ms"
                     >
-                       <div className="  pos-rel ">
-                <div className="xb-btn ">
-                    <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops "> Join Us </Link>
-                </div>
-            </div>
+                      <div className="  pos-rel ">
+                        <div className="xb-btn ">
+                          <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops "> Join Us </Link>
+                        </div>
+                      </div>
                     </div>
                     <div
                       className="xb-btn wow fadeInUp"
                       data-wow-delay="450ms"
                       data-wow-duration="600ms"
                     >
-                     <div className="  pos-rel ">
-                <div className="xb-btn ">
-                    <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops ">Learn More</Link>
-                </div>
-            </div>
-                        
-                   
+                      <div className="  pos-rel ">
+                        <div className="xb-btn ">
+                          <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops ">Learn More</Link>
+                        </div>
+                      </div>
+
+
                     </div>
                   </div>
                 </Fade>

@@ -15,7 +15,7 @@ const ServiceSection = () => {
     const serviceListItems = serviceListRef.current.querySelectorAll('.service-list-item');
     const activeBg = activeBgRef.current;
     const item = serviceListItems[index];
-  
+
     const menuTop = serviceListRef.current.getBoundingClientRect().top;
     const itemTop = item.getBoundingClientRect().top;
     const topOff = itemTop - menuTop;
@@ -24,7 +24,7 @@ const ServiceSection = () => {
     activeBg.style.top = `${topOff}px`;
     activeBg.style.height = `${height}px`;
   };
-  
+
 
   const handleMouseEnter = (index) => {
     setActiveIndex(index);

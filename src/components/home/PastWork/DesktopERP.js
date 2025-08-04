@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Fade } from "react-awesome-reveal";
-// import Bg from '../../../images/bg/cta_bg.jpg'
 import cta1 from '../../../images/pastWork/desktop_erp.webp'
 import cta2 from '../../../images/pastWork/weberp_bg.webp'
 import logo from '../../../images/pastWork/png logo.png';

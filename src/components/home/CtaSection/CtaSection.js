@@ -2,8 +2,6 @@ import React from 'react';
 import cta from '../../../images/cta/clip-bord.png'
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
-
-
 const CtaSection = (props) => {
 
     const ClickHandler = () => {

@@ -1,14 +1,7 @@
 import React from 'react'
 import ContactForm from '../ContactFrom/ContactForm'
-// import Bg from '../../../images/bg/cont_bg-shape.png'
-// import Bg2 from '../../../images/bg/cont-bg02.png'
-// import icon1 from '../../../images/icon/edit.svg'
 import icon2 from '../../../images/icon/call-balck.png'
 import icon3 from '../../../images/icon/sms-black.png'
-// import icon4 from '../../../images/icon/loc-black.png'
-// import icon5 from '../../../images/icon/bill.svg'
-// import cImg from '../../../images/contact/cont-shape.png'
-// import cImg2 from '../../../images/shape/con-shape.png'
 import { Link } from 'react-router-dom'
 
 
@@ -18,10 +11,8 @@ const ContactSection = (props) => {
     }
 
     return (
-        // <section className="contact contact-bg pt-140 pb-100 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
         <section className="contact contact-bg pt-50 pb-50 pos-rel bg_img" >
             <div className="container rounded-4" style={{ background: "#e6f0ff" }}>
-                {/* <div className="contact-two pos-rel bg_img" style={{ backgroundImage: `url(${Bg2})` }}> */}
                 <div className="contact-two pos-rel bg_img">
 
                     <div className="row mt-none-30">
@@ -72,7 +63,6 @@ const ContactSection = (props) => {
                     </div>
                 </div>
             </div>
-            {/* <div className="xb-shape"><img src={cImg2} alt=""/></div> */}
         </section>
     )
 }

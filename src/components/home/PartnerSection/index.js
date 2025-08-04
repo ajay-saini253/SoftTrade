@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import pimg1 from "../../../images/partner/icons/1.png";
 import pimg2 from "../../../images/partner/icons/2.png";
 import pimg3 from "../../../images/partner/icons/3.png";
@@ -35,7 +34,6 @@ import pimg29 from "../../../images/partner/icons/ratilal.jpg";
 import pimg30 from "../../../images/partner/icons/soham.jpg";
 import pimg31 from "../../../images/partner/icons/whitelion.png";
 
-// import { BsDisplay } from "react-icons/bs";
 
  const partners = [
   { pImg: pimg1, name: "Dangayach Products – Bassi, Jaipur" },
@@ -72,26 +70,6 @@ import pimg31 from "../../../images/partner/icons/whitelion.png";
 ];
 
 
-// const partners1 = [
-//   { pImg: pimg16, name: "BS Jain & Co. – Coimbatore" },
-//   { pImg: pimg17, name: "Adinath Brokers (Canvassing Agent) – Aurangabad" },
-//   { pImg: pimg18, name: "Raphelite – Jaipur" },
-//   { pImg: pimg19, name: "Chhaju Ram & Co. (CRCQ) – Ludhiana (Since 1971)" },
-//   { pImg: pimg20, name: "R. Chunnilal & Co. – Surat" },
-//   { pImg: pimg21, name: "Anand Pandit – Motion Pictures" },
-//   { pImg: pimg22, name: "Tadkeshwar Agro Food Product" },
-//   { pImg: pimg23, name: "Hindustan Wheat Brokers – Coimbatore" },
-//   { pImg: pimg24, name: "KFC Entertainment" },
-//   { pImg: pimg25, name: "Kedawat Refoils" },
-//   { pImg: pimg26, name: "Pen Marudhar Cine Entertainment" },
-//   { pImg: pimg27, name: "MKS – Mahaveer Kirana Store" },
-//   { pImg: pimg28, name: "Prakash Films (PF)" },
-//   { pImg: pimg29, name: "R. Sons Group – Since 1989" },
-//   { pImg: pimg30, name: "Soham Rock Star Entertainment" },
-//   { pImg: pimg31, name: "Whitelion" }
-
-// ]
-
 const baseSliderSettings = {
   dots: false,
   infinite: true,
@@ -106,15 +84,10 @@ const baseSliderSettings = {
     { breakpoint: 1025, settings: { slidesToShow: 5, slidesToScroll: 1 } },
     { breakpoint: 991, settings: { slidesToShow: 3, slidesToScroll: 1 } },
     { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-    // { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     { breakpoint: 450, settings: { slidesToShow: 1, slidesToScroll: 1 } },
   ],
 };
 
-// const rtlSliderSettings = {
-//   ...baseSliderSettings,
-//   rtl: true,
-// };
 
 const PartnerSection = () => {
   return (
@@ -139,18 +112,6 @@ const PartnerSection = () => {
               ))}
             </Slider>
           </div>
-
-          {/* Second Slider - Right to Left */}
-          {/* <div className="brand-wrap brand-marquee mt-5 mx-3">
-            <Slider {...rtlSliderSettings}>
-              {partners1.map((partner, index) => (
-                 <div className="brand-logo text-center" key={index}>
-                   <img src={partner.pImg} className="" alt={`Client ${index}`}  style={{ display: "inline-block", height:"120px" ,width:"auto" }} />
-                  <p className="pt-2 text-black partner-brand-name">{partner.name}</p>
-                </div>
-              ))}
-            </Slider>
-          </div> */}
         </div>
       </div>
     </section>

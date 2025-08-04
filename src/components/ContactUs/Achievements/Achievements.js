@@ -1,6 +1,5 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
-// import hicon from '../../../images/icon/star02.svg'
 import sIcon1 from '../../../images/award/img01.png'
 import sIcon2 from '../../../images/award/img02.png'
 import sIcon3 from '../../../images/award/img03.png'
@@ -39,18 +38,12 @@ const Achievements = (props) => {
                 <div className="xb-award-wrap">
                     <div className="award-top align-items-end mb-10">
                         <div className="sec-title--two sec-title--three mb-30">
-                            {/* <Fade direction='down' triggerOnce={'false'} duration={1000} delay={9}>
-                                <div>
-                                    <span className="sub-title wow fadeInDown" data-wow-delay="000ms" data-wow-duration="600ms"><img src={hicon} alt="" /><span>Our Achievements</span></span>
-                                </div>
-                            </Fade> */}
                             <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
                                 <div>
                                     <h2 className="title wow skewIn text-black text-center" data-wow-delay="000ms" data-wow-duration="600ms">SoftTrade Products Awarded by</h2>
                                 </div>
                             </Fade>
                         </div>
-                        {/* <p className="content mb-30">We’re proud of the awards we’ve earned, reflecting our dedication to delivering top-notch cybersecurity solutions and the trust our clients place in us.</p> */}
                     </div>
                     <div className="row">
                         {Award.map((award, i) => (

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from "react-awesome-reveal";
-// import flower from '../../../images/icon/flower-icon.svg';
 import brand1 from '../../../images/brand/brand-logo01.png';
 import brand2 from '../../../images/brand/brand-logo02.png';
 import brand3 from '../../../images/brand/brand-logo04.png';
@@ -18,11 +17,9 @@ const BrandSection = () => {
       <div className="container">
         
         <div className="page-title-box text-center mb-65">
-          {/* <img src={flower} alt="" /> */}
           <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
               <h5 className="title pb-20 wow fadeInUp" data-wow-duration="600ms">Our Products</h5>
           </Fade>
-          {/* <img src={flower} alt="" /> */}
         </div>
         <div className="xb-brand-wrap">
           <div className="xb-brand-item">

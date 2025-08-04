@@ -3,18 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
-
 import blogs from '../../../api/blogs';
-
-// Optional image imports (uncomment if needed)
-// import hicon from '../../../images/icon/blg-cap.svg';
-// import bicon1 from '../../../images/icon/arrow-white.png';
 import bicon2 from '../../../images/shape/blg-line.png';
-// import bicon3 from '../../../images/icon/profile-circle.png';
-// import bicon4 from '../../../images/icon/menu-board.png';
+
 
 const BlogSection = () => {
   const prevRef = useRef(null);
@@ -61,7 +54,6 @@ const BlogSection = () => {
               modules={[Navigation]}
               spaceBetween={50}
               slidesPerView={3}
-            //   centeredSlides={true}
               loop={true}
               speed={500}
               parallax={true}
@@ -70,7 +62,7 @@ const BlogSection = () => {
               }}
               breakpoints={{
                 1600: { slidesPerView: 4 },
-                768: { slidesPerView: 3},
+                768: { slidesPerView: 3 },
                 576: { slidesPerView: 2 },
                 0: { slidesPerView: 1 },
               }}
@@ -81,8 +73,6 @@ const BlogSection = () => {
                     <div className="xb-item--holder">
                       <Link onClick={handleClick} to={`/blog-single/${blog.slug}`} className="xb-item--img">
                         <img src={blog.screens} alt={`Blog ${index}`} id="ajay-img2" />
-                        {/* Optional Arrow */}
-                        {/* <div className="xb-item--circle-arrow"><img src={bicon1} alt="" /></div> */}
                         <div className="xb-item--line"><img src={bicon2} alt="" /></div>
                       </Link>
                     </div>
@@ -92,18 +82,7 @@ const BlogSection = () => {
                           ? blog.title.split(" ").slice(0, 15).join(" ") + "..."
                           : blog.title) || 'SoftTrade BLogs'}
                       </Link>
-                  </h2>
-                    {/* <h2 className="xb-item--title border-effect-2">
-                      <Link onClick={handleClick} to={`/blog-single/${blog.slug}`} style={{ color: "#000" }}>
-                        {blog.title || 'How to Prevent Ransomware Attacks, Tips for Businesses..'}
-                      </Link>
-                    </h2> */}
-
-                    {/* Optional metadata */}
-                    {/* <ul className="xb-item--meta list-unstyled ul_li">
-                      <li><span><img src={bicon3} alt="" /></span>Posted By {blog.author || 'Johnson'}</li>
-                      <li><span><img src={bicon4} alt="" /></span>{blog.create_at}</li>
-                    </ul> */}
+                    </h2>
                   </div>
                 </SwiperSlide>
               ))}

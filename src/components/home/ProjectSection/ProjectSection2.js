@@ -11,7 +11,6 @@ import brand1 from '../../../images/brand/brand-logo03.png'
 import brand2 from '../../../images/brand/brand-logo02.png'
 import brand3 from '../../../images/brand/brand-logo01.png'
 import brand4 from '../../../images/brand/brand-logo04.png'
-// import icon from '../../../images/icon/eye-icon.svg'
 
 const ProjectSection2 = (props) => {
     const ClickHandler = () => {
@@ -103,24 +102,12 @@ const ProjectSection2 = (props) => {
          <div className="container">
                 <div className="sa-project-top  mb-25">
                     <div className="sec-title--two mb-50">
-                        {/* <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
-                            <div>
-                                <span className="sub-title wow fadeInDown" data-wow-duration="600ms"><img src={icon} alt="" />Case study</span>
-                            </div>
-                        </Fade> */}
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                             <div>
                                 <h2 className="title wow skewIn   text-center" data-wow-duration="600ms">Cloud ERP for Seamless Business Operations</h2>
                             </div>
                         </Fade>
                     </div>
-                    {/* <div className="xb-btn text-center wow fadeInRight mb-30" data-wow-duration="600ms">
-                        <Fade direction='right' triggerOnce={'false'} duration={1000} delay={9}>
-                            <div>
-                                <Link onClick={ClickHandler} to={'/casestudy'} className="thm-btn thm-btn--aso">View more casestudy</Link>
-                            </div>
-                        </Fade>
-                    </div> */}
                 </div>
             </div>
             <div className="sa-project_wrapper">

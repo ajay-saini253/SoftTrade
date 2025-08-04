@@ -22,8 +22,8 @@ import careerImg from '../../../images/header/Career & Job.png';
 const Header = () => {
   const [mobileActive, setMobileActive] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  const [selectedAbout, setSelectedAbout] = useState('about'); 
-const [selectedResources, setSelectedResources] = useState('resources'); 
+  const [selectedAbout, setSelectedAbout] = useState('about');
+  const [selectedResources, setSelectedResources] = useState('resources');
 
   const handleScroll = useCallback(() => {
     setSticky(window.scrollY > 80);
@@ -64,7 +64,7 @@ const [selectedResources, setSelectedResources] = useState('resources');
     },
   };
 
-   const resourcesMenuContent = {
+  const resourcesMenuContent = {
     training: {
       title: 'SoftTrade Training',
       heading: 'SoftTrade Training',
@@ -83,7 +83,7 @@ const [selectedResources, setSelectedResources] = useState('resources');
       image: awardsImg,
       link: '/blog',
     },
-    
+
   };
 
   return (
@@ -102,7 +102,7 @@ const [selectedResources, setSelectedResources] = useState('resources');
                 <ul>
                   <li><Link onClick={clickHandler} to="/"><span>Home</span></Link></li>
 
-                
+
                   <li className="menu-item-has-children megamenu">
                     <Link onClick={clickHandler} to="about"><span>About Us</span></Link>
                     <ul className="submenu">
@@ -115,85 +115,54 @@ const [selectedResources, setSelectedResources] = useState('resources');
                                   <div className="row">
                                     {/* Left list items */}
                                     <div className="col-lg-6">
-                                      
-<div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('about')}>
-    <Link onClick={clickHandler} className="iconbox_block_2" to="/about">
-      <span className="icon_title_wrap">
-        <small className="iconbox_icon">
-          <img src={icon2} alt="About Us" />
-        </small>
-        <small className="iconbox_title">About Us</small>
-      </span>
-      
-    </Link>
-  </div>
 
-<div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('customer')}>
-    <Link onClick={clickHandler} className="iconbox_block_2" to="/customer-stories">
-      <span className="icon_title_wrap">
-        <small className="iconbox_icon">
-          <img src={icon5} alt="customer-stories" />
-        </small>
-        <small className="iconbox_title">Customer Stroies</small>
-      </span>
-      
-    </Link>
-  </div>
-  
-<div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('awards')}>
-    <Link onClick={clickHandler} className="iconbox_block_2" to="/awards">
-      <span className="icon_title_wrap">
-        <small className="iconbox_icon">
-          <img src={icon3} alt="Awards & Achievements" />
-        </small>
-        <small className="iconbox_title">Awards & Achievements</small>
-      </span>
-      
-    </Link>
-  </div>
+                                      <div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('about')}>
+                                        <Link onClick={clickHandler} className="iconbox_block_2" to="/about">
+                                          <span className="icon_title_wrap">
+                                            <small className="iconbox_icon">
+                                              <img src={icon2} alt="About Us" />
+                                            </small>
+                                            <small className="iconbox_title">About Us</small>
+                                          </span>
 
-<div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('career')}>
-    <Link onClick={clickHandler} className="iconbox_block_2" to="/career">
-      <span className="icon_title_wrap">
-        <small className="iconbox_icon">
-          <img src={icon4} alt="Career & Job" />
-        </small>
-        <small className="iconbox_title">Career & Job</small>
-      </span>
-      
-    </Link>
-  </div>
-  
+                                        </Link>
+                                      </div>
 
+                                      <div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('customer')}>
+                                        <Link onClick={clickHandler} className="iconbox_block_2" to="/customer-stories">
+                                          <span className="icon_title_wrap">
+                                            <small className="iconbox_icon">
+                                              <img src={icon5} alt="customer-stories" />
+                                            </small>
+                                            <small className="iconbox_title">Customer Stroies</small>
+                                          </span>
 
+                                        </Link>
+                                      </div>
 
-                                      {/* <ul className="icon_list unordered_list_block">
-                                        <li onMouseEnter={() => setSelectedAbout('about')}>
-                                          <Link onClick={clickHandler} to="/about" className="about_submenu">
-                                            <small className="me-2"><img src={icon2} alt="About Us" /></small>
-                                            <span className="icon_list_text">About Us</span>
-                                          </Link>
-                                        </li>
-                                        <li onMouseEnter={() => setSelectedAbout('customer')}>
-                                          <Link onClick={clickHandler} to="/customer-stories" className="about_submenu">
-                                            <small className="me-2"><img src={icon3} alt="Customer" /></small>
-                                            <span className="icon_list_text">Customer Stories</span>
-                                          </Link>
-                                        </li>
+                                      <div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('awards')}>
+                                        <Link onClick={clickHandler} className="iconbox_block_2" to="/awards">
+                                          <span className="icon_title_wrap">
+                                            <small className="iconbox_icon">
+                                              <img src={icon3} alt="Awards & Achievements" />
+                                            </small>
+                                            <small className="iconbox_title">Awards & Achievements</small>
+                                          </span>
 
-                                        <li onMouseEnter={() => setSelectedAbout('awards')}>
-                                          <Link onClick={clickHandler} to="/awards" className="about_submenu">
-                                            <small className="me-2"><img src={icon4} alt="Awards" /></small>
-                                            <span className="icon_list_text">Awards & Achievements</span>
-                                          </Link>
-                                        </li>
-                                        <li onMouseEnter={() => setSelectedAbout('career')}>
-                                          <Link onClick={clickHandler} to="/career" className="about_submenu">
-                                            <small className="me-2"><img src={icon5} alt="Career" /></small>
-                                            <span className="icon_list_text">Career & Job</span>
-                                          </Link>
-                                        </li>
-                                      </ul> */}
+                                        </Link>
+                                      </div>
+
+                                      <div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedAbout('career')}>
+                                        <Link onClick={clickHandler} className="iconbox_block_2" to="/career">
+                                          <span className="icon_title_wrap">
+                                            <small className="iconbox_icon">
+                                              <img src={icon4} alt="Career & Job" />
+                                            </small>
+                                            <small className="iconbox_title">Career & Job</small>
+                                          </span>
+
+                                        </Link>
+                                      </div>
                                     </div>
 
                                     {/* Right dynamic content */}
@@ -209,14 +178,14 @@ const [selectedResources, setSelectedResources] = useState('resources');
                                               <path d="M13 1C13 0.447715 12.5523 0 12 0H3C2.44771 0 2 0.447715 2 1C2 1.55228 2.44771 2 3 2H11V10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10V1ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292893L0.292893 11.2929L1.70711 12.7071Z" fill="#fff" />
                                             </svg>
 
-                              
+
                                           </span>
                                         </Link>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div> 
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -227,7 +196,7 @@ const [selectedResources, setSelectedResources] = useState('resources');
 
                   {/*  */}
 
-         <li className="menu-item-has-children megamenu">
+                  <li className="menu-item-has-children megamenu">
                     <Link onClick={clickHandler} to="/"><span>Products</span></Link>
                     <ul className="submenu">
                       <li>
@@ -282,13 +251,13 @@ const [selectedResources, setSelectedResources] = useState('resources');
                                           <span className="description mb-0">Happy to help you!</span>
                                         </Link>
                                       </div>
-                                      
-                                      
-                                      
-                                     
-                                      
-                                     
-                                     
+
+
+
+
+
+
+
                                     </div>
                                   </div>
                                   <ul className="btns_group p-0 unordered_list justify-content-start">
@@ -362,20 +331,11 @@ const [selectedResources, setSelectedResources] = useState('resources');
                       </li>
                     </ul>
                   </li>
-                
-                {/* <li className="menu-item-has-children">
-                    <Link onClick={clickHandler} to="/blog"><span>Resources</span></Link>
-                    <ul className="submenu">
-                       <li><Link onClick={clickHandler} to="/blog"><span>SoftTrade Training </span></Link></li>
-                      <li><Link onClick={clickHandler} to="/blog-single/AI-in-Neuroimaging-IXICOs-Cloud-Transformation"><span>SoftTrade </span></Link></li>
-                      <li><Link onClick={clickHandler} to="/blog"><span>Blog</span></Link></li>
-                      </ul>
-                  </li> */}
 
-{/* Resources */}
+                  {/* Resources */}
 
 
- <li className="menu-item-has-children megamenu">
+                  <li className="menu-item-has-children megamenu">
                     <Link onClick={clickHandler} to="blog"><span>Resources</span></Link>
                     <ul className="submenu">
                       <li>
@@ -385,53 +345,53 @@ const [selectedResources, setSelectedResources] = useState('resources');
                               <div className="col-lg-12">
                                 <div className="px-3 py-3">
                                   <div className="row">
-                                 
+
                                     <div className="col-lg-6">
-                                      
-<div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedResources('training')}>
-    <Link onClick={clickHandler} className="iconbox_block_2" to="/soft-trade-training">
-      <span className="icon_title_wrap">
-        <small className="iconbox_icon">
-          <img src={icon2} alt="SoftTrade Training" />
-        </small>
-        <small className="iconbox_title">SoftTrade Training</small>
-      </span>
-      
-    </Link>
-  </div>
 
-<div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedResources('beta')}>
-    <Link onClick={clickHandler} className="iconbox_block_2" to="/beta-program">
-      <span className="icon_title_wrap">
-        <small className="iconbox_icon">
-          <img src={icon5} alt="beta-program" />
-        </small>
-        <small className="iconbox_title">BETA Program</small>
-      </span>
-      
-    </Link>
-  </div>
-  
-<div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedResources('blog')}>
-    <Link onClick={clickHandler} className="iconbox_block_2" to="/blog">
-      <span className="icon_title_wrap">
-        <small className="iconbox_icon">
-          <img src={icon3} alt="blog" />
-        </small>
-        <small className="iconbox_title">Blog</small>
-      </span>
-      
-    </Link>
-  </div>
+                                      <div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedResources('training')}>
+                                        <Link onClick={clickHandler} className="iconbox_block_2" to="/soft-trade-training">
+                                          <span className="icon_title_wrap">
+                                            <small className="iconbox_icon">
+                                              <img src={icon2} alt="SoftTrade Training" />
+                                            </small>
+                                            <small className="iconbox_title">SoftTrade Training</small>
+                                          </span>
+
+                                        </Link>
+                                      </div>
+
+                                      <div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedResources('beta')}>
+                                        <Link onClick={clickHandler} className="iconbox_block_2" to="/beta-program">
+                                          <span className="icon_title_wrap">
+                                            <small className="iconbox_icon">
+                                              <img src={icon5} alt="beta-program" />
+                                            </small>
+                                            <small className="iconbox_title">BETA Program</small>
+                                          </span>
+
+                                        </Link>
+                                      </div>
+
+                                      <div className="col-xl-10 col-md-4" onMouseEnter={() => setSelectedResources('blog')}>
+                                        <Link onClick={clickHandler} className="iconbox_block_2" to="/blog">
+                                          <span className="icon_title_wrap">
+                                            <small className="iconbox_icon">
+                                              <img src={icon3} alt="blog" />
+                                            </small>
+                                            <small className="iconbox_title">Blog</small>
+                                          </span>
+
+                                        </Link>
+                                      </div>
 
 
-  
+
 
 
 
                                     </div>
 
-                                 
+
                                     <div className="col-lg-6">
                                       <div className="megamenu_case megamenu_case1">
                                         <h3 className='text-black'>{resourcesMenuContent[selectedResources].title}</h3>
@@ -444,14 +404,14 @@ const [selectedResources, setSelectedResources] = useState('resources');
                                               <path d="M13 1C13 0.447715 12.5523 0 12 0H3C2.44771 0 2 0.447715 2 1C2 1.55228 2.44771 2 3 2H11V10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10V1ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292893L0.292893 11.2929L1.70711 12.7071Z" fill="#fff" />
                                             </svg>
 
-                              
+
                                           </span>
                                         </Link>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div> 
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -471,7 +431,7 @@ const [selectedResources, setSelectedResources] = useState('resources');
                       <li><Link onClick={clickHandler} to="/casestudy-details/Marketing"><span>Partner Login</span></Link></li>
                     </ul>
                   </li>
-                 
+
                   <li><Link onClick={clickHandler} to="/contact"><span>Contact</span></Link></li>
                 </ul>
               </nav>
@@ -506,11 +466,11 @@ const [selectedResources, setSelectedResources] = useState('resources');
               </button>
             </div>
             <div className="header-contact d-none d-md-block">
-             
+
               <Link onClick={clickHandler} to="/contact" className="blc-btn blc-btn-custom">
-                  <span className="date-picker-wrapper pe-2">         
-                   <FaCalendarAlt className="calendar-icon text-black "/>
-              </span>
+                <span className="date-picker-wrapper pe-2">
+                  <FaCalendarAlt className="calendar-icon text-black " />
+                </span>
                 <span className="text-black">Book Free Demo</span>
                 <span className="btn-shape">
                   <svg width="216" height="44" viewBox="0 0 216 44" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -521,8 +481,7 @@ const [selectedResources, setSelectedResources] = useState('resources');
                       height="44"
                       rx="27"
                       fill="#fff"
-                       stroke="#000"
-                      // stroke="url(#paint0_linear)"
+                      stroke="#000"
                       strokeWidth="1"
                     />
                     <defs>
