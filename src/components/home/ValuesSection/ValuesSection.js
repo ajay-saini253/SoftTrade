@@ -68,10 +68,10 @@ const ValuesSection = () => {
 
   return (
 
-    <section className=" ValuesSection feature pt-70 pb-70 " style={{ background: "#f9f9f9" }} >
+    <section className=" ValuesSection feature pt-50 pb-50 " style={{ background: "#f9f9f9" }} >
       <div className="container">
         <div className="">
-          <div className="sec-title--two sec-title--four text-center mb-65">
+          <div className="sec-title--two sec-title--four text-center mb-25">
             <Fade direction="down" triggerOnce={false} duration={1700}>
               <h2 className="title"> Why to choose us?</h2>
             </Fade>

@@ -9,15 +9,16 @@ const CustomERP = () => {
             <div className="container">
                 <div className="hero_wrap">
                     <div className="row align-items-center">
-                        <div className='col-lg-6 col-md-6 col-sm-12'>
-                            <div className="cta-sec-title">
-                                <Fade direction='up' triggerOnce={false} duration={1200} delay={9}>
-                                    <div className='my-3'>
-                                        <h2 className="title wow fadeInUp webbaseerp_heading fs-3 text-start" data-wow-duration="600ms">
+                         <Fade direction='up' triggerOnce={false} duration={1200} delay={9}>
+                                    <div className=''>
+                                        <h2 className="title wow fadeInUp webbaseerp_heading fs-3 text-center" data-wow-duration="600ms">
                                             Dedicated Customer <span className="yllow_txt">Support – </span> We're Here for You
                                         </h2>
                                     </div>
                                 </Fade>
+                        <div className='col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1'>
+                            <div className="cta-sec-title">
+                               
 
                                 <Fade direction='up' triggerOnce={false} duration={1400} delay={9}>
                                     <div className='my-2'>
@@ -70,7 +71,7 @@ const CustomERP = () => {
                             </div>
                         </div>
 
-                        <div className=" col-lg-6 mt-sm-3">
+                        <div className=" col-lg-6 mt-sm-3 order-1 order-lg-2">
                             <div className="hero-right_img pos-rel">
                                 <div className="hero-right-image">
                                     <Fade direction='up' triggerOnce={false} duration={900} delay={2}>

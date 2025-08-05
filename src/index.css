@@ -50,7 +50,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .section-wrap{
     @apply py-[120px] md:py-[90px] sm:py-[80px] relative  z-10
 }

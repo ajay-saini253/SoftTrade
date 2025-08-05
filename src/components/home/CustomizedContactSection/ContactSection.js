@@ -5,7 +5,7 @@ const CustomizeContactSection = (props) => {
 
 
     return (
-        <section className="feature pb-50 pt-50"
+        <section className="feature pb-20 pt-20"
             style={{
                 backgroundImage: `url(${cta2})`,
                 backgroundSize: 'cover',
@@ -15,7 +15,7 @@ const CustomizeContactSection = (props) => {
         >
             <div className="ContactSection-container">
                 <div className="feature-wrap">
-                    <div className="row align-items-center mt-none-30">
+                    <div className="row align-items-center">
                         <div className="col-lg-12 mt-30">
                             <div className="feature-left-item pos-rel">
                                 <div className="xb-img updown-2"><img src={icon1} alt="" /></div>

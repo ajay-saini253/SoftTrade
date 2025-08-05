@@ -1,14 +1,5 @@
-/*-----------------------------------------------------------------------------------
-    Project Name: SoftTrade - Technology & IT Startup 
-    Description: SoftTrade - Technology & IT Startup 
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ==================
-    
-	01. Theme default CSS
+/*----------------------------------------------------------------------------------- 
+	01. default CSS
     02. header
     03. global
     04. hero
@@ -5190,7 +5181,7 @@ body[data-aos-easing=ease] [data-aos] {
 .mega_menu_wrapper .iconbox_block_2 .icon_title_wrap {
   gap: 10px;
   display: flex !important;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   align-items: flex-start;
 }
 
@@ -5769,7 +5760,7 @@ body[data-aos-easing=ease] [data-aos] {
 
 @media (max-width: 1199px) {
   .sec-title--two .title {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 46px;
   }
 }
@@ -5829,7 +5820,7 @@ body[data-aos-easing=ease] [data-aos] {
 
 @media (max-width: 1199px) {
   .sec-title--four .title {
-    font-size:35px;
+    font-size:32px;
     line-height: 52px;
   }
 }
@@ -13490,9 +13481,9 @@ color:#038f8e;
 }
 
 .xb-faq-two .accordion_box .block .acc-btn {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
-  padding: 25px 20px;
+  padding: 18px 20px;
   background: transparent;
   color: var(--color-heading-three);
   cursor: pointer;
@@ -19669,7 +19660,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 @media (max-width: 767px) {
   .thm-btn--devops {
-    padding: 15px 40px 15px;
+    padding: 12px 25px 12px;
   }
 }
 
@@ -19911,7 +19902,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  background: var(--color-primary-two);
+  background: var(--color-primary-four);
   display: inline-block;
 }
 
@@ -21236,7 +21227,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 .footer-style-two .footer-widget .xb-item--list {
-  line-height: 40px;
+  line-height: 32px;
 }
 
 .footer-style-two .footer-copyright {
@@ -21465,7 +21456,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 @media (max-width: 991px) {
   .footer-style-four {
-    padding-top: 70px;
+    padding-top: 20px;
   }
 }
 
@@ -21485,7 +21476,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 @media (max-width: 1199px) {
   .footer-style-four .footer-widget {
     padding-bottom: 0;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 
@@ -21670,7 +21661,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 @media (max-width: 991px) {
   .footer-style-four .footer-copyright {
-    padding-top: 60px;
+    padding-top: 20px;
     border: 0;
   }
 }
@@ -22233,19 +22224,6 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 
-
-
-#ajay-img {
-  max-width: 170% !important;
-}
-
-
-
-
-
-.ajay-footer {
-  color: #757C9D;
-}
 
 a.footer-social.footer-facebook {
   padding: 10px;

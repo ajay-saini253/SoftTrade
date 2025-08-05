@@ -271,7 +271,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 } */
 .webbaseerp {
   position: relative;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 
 
@@ -299,11 +299,11 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 }
 
 .custom-swiper-button-prev {
-  left: -50px;
+  left: 0px;
 }
 
 .custom-swiper-button-next {
-  right: -50px;
+  right: 0px;
 }
 
 
@@ -526,6 +526,15 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
   color: #333;
 }
 
+@media (min-width: 768px)  and (max-width: 991px){
+ .trusted-customer-number{
+  font-size:1.5rem
+ }
+ .trusted-customer-heading{
+  font-size: 25px;
+ }
+}
+
 @media (max-width: 767px) {
     .trusted-customer-box {
         padding: 0;
@@ -621,7 +630,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 
   .section-title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 28px;
   }
 
   .hero-image-container img {
@@ -768,3 +777,15 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 .support-list-span{
   font-size: 15px;
 }
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .hd-feature-item .xb-item--title {
+    font-size: 15px;
+    letter-spacing: 1.1px;
+  }
+
+  .values-content{
+    font-size: 13px;
+  }
+}
+

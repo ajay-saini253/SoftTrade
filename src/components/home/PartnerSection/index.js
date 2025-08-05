@@ -106,7 +106,7 @@ const PartnerSection = () => {
             <Slider {...baseSliderSettings}>
               {partners.map((partner, index) => (
                 <div className="brand-logo text-center" key={index}>
-                  <img src={partner.pImg} className="" alt={`Client ${index}`}  style={{ display: "inline-block", height:"120px" ,width:"auto" }} />
+                  <img src={partner.pImg} className="" alt={`Client ${index}`}  style={{ display: "inline-block", height:"150px" ,width:"auto" }} />
                   <p className="pt-2 text-black partner-brand-name">{partner.name}</p>
                 </div>
               ))}

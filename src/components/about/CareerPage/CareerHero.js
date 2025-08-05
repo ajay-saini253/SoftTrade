@@ -19,7 +19,7 @@ const CareerHero = () => {
 
                                 <div>
                                     <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-                                        <span class="wow fadeInUp text-justify" data-wow-duration="600ms">
+                                        <span className="wow fadeInUp text-justify" data-wow-duration="600ms">
                                             We know that finding a meaningful and rewarding job can be a long journey. Our goal is to make that process as easy as possible for you, and to create a work environment that's satisfying - one where you'll look forward to coming to every day. Start your journey with us by browsing available jobs.
                                         </span>
                                     </Fade>

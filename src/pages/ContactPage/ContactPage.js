@@ -34,7 +34,7 @@ const TeamPage = (props) => {
                                         </Fade>
                                         <div>
                                             <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-                                                <span class="wow fadeInUp" data-wow-duration="600ms">
+                                                <span className="wow fadeInUp" data-wow-duration="600ms">
                                                     Let's resolve business inquiries together. We are always here to listen to you for
                                                     our software solutions, features, pricing, demos, or other business discussions.
                                                 </span>

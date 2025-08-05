@@ -62,7 +62,7 @@ const BlogSection = () => {
               }}
               breakpoints={{
                 1600: { slidesPerView: 4 },
-                768: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
                 576: { slidesPerView: 2 },
                 0: { slidesPerView: 1 },
               }}
@@ -72,7 +72,7 @@ const BlogSection = () => {
                   <div className="xb-blog-item wow fadeInUp custom_blog" data-wow-delay="0ms" data-wow-duration="600ms">
                     <div className="xb-item--holder">
                       <Link onClick={handleClick} to={`/blog-single/${blog.slug}`} className="xb-item--img">
-                        <img src={blog.screens} alt={`Blog ${index}`} id="ajay-img2" />
+                        <img src={blog.screens} alt={`Blog ${index}`}  />
                         <div className="xb-item--line"><img src={bicon2} alt="" /></div>
                       </Link>
                     </div>

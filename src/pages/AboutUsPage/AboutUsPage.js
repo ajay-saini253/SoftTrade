@@ -21,7 +21,7 @@ const AboutUsPage = (props) => {
                 <AboutVideo/>
                 <Feature1 />
                 <Roadmap />
-                <GallerySection pClass={'pt-50'} />
+                <GallerySection className={'pt-50'} />
             </div>
             <Footer />
             <Scrollbar />

@@ -80,7 +80,7 @@ const WebBaseERP = () => {
               <SwiperSlide>
                 <div className="row desktop-benifits justify-content-center">
                   <div className="col-lg-3">
-                    <div className="erp-benefits-cards text-start mb-4">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Data Security</h5>
                       <ul>
                         <li className="text-black"><img src={icon1} alt="check" className="erp-benefits-cards-img me-2" />Focus  on the protection of data</li>
@@ -88,7 +88,7 @@ const WebBaseERP = () => {
                         <li className="text-black"><img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Can  be installed on clients own server locally</li>
                       </ul>
                     </div>
-                    <div className="erp-benefits-cards text-start mb-4">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Audit ready Reports</h5>
                       <ul>
                         <li className="text-black"><img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Support for Charted Accountants</li>
@@ -96,7 +96,7 @@ const WebBaseERP = () => {
                         <li className="text-black"><img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Maintain clean , Transparent records that are always ready to support audit</li>
                       </ul>
                     </div>
-                    <div className="erp-benefits-cards text-start mb-4">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Cost Effective</h5>
                       <ul>
                         <li className="text-black"><img src={icon1} alt="check" className="erp-benefits-cards-img me-2" />Saves the cost at many stages</li>
@@ -106,7 +106,7 @@ const WebBaseERP = () => {
 
                       </ul>
                     </div>
-                    <div className="erp-benefits-cards text-start">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Upload Softcopies</h5>
                       <ul>
                         <li className="text-black"><img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Attach bills, Reciept, other documents to each transaction for better record keeping</li>
@@ -117,7 +117,7 @@ const WebBaseERP = () => {
 
                   <div className="col-lg-5 d-flex flex-column  justify-content-center align-items-center">
                     <img src={cta2} alt="Slide 2" className="webbaseerp-slider-image" />
-                    <div className="erp-benefits-cards text-start  mx-5">
+                    <div className="erp-benefits-cards text-start mb-2  mx-5">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Multi company/ accounts and  Multi Branch and location support</h5>
                       <ul>
                         <li className="text-black"> <img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Provides centralised control access of different branch and locations</li>
@@ -128,19 +128,19 @@ const WebBaseERP = () => {
                   </div>
 
                   <div className="col-lg-3">
-                    <div className="erp-benefits-cards text-start mb-4">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Seperate user account and permissions</h5>
                       <ul>
                         <li className="text-black"> <img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Role based access control is provided for admin, accountant, staff to limit access to only necessary modules and data.</li>
                       </ul>
                     </div>
-                    <div className="erp-benefits-cards text-start mb-4">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Audit Trail</h5>
                       <ul>
                         <li className="text-black"> <img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Track every change and action within the software for better transparency and compliance</li>
                       </ul>
                     </div>
-                    <div className="erp-benefits-cards text-start mb-4">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">Adhoc Features</h5>
                       <ul>
                         <li className="text-black"> <img src={icon1} alt="check" className="erp-benefits-cards-img me-2" /> Automated E invoice , E way bill</li>
@@ -154,7 +154,7 @@ const WebBaseERP = () => {
 
                       </ul>
                     </div>
-                    <div className="erp-benefits-cards text-start">
+                    <div className="erp-benefits-cards text-start mb-2">
                       <h5 className=" text-capitalize py-2 yllow_txt desktop-benifits-heading">MIS Features</h5>
                       <ul>
                         <li className="text-black"> <img src={icon1} alt="check" className="erp-benefits-cards-img me-2" />Advanced outstanding follow up system.</li>

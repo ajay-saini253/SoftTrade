@@ -19,14 +19,14 @@ const DesktopERP = (props) => {
       backgroundRepeat: 'no-repeat',
     }} >
       <div className="container">
-        <div class="row justify-content-center align-items-center text-center">
+        <div className="row justify-content-center align-items-center text-center">
           <div className='col-lg-5 col-md-12 col-sm-12'>
             <div className=" cta-sec-title text-center ">
               <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                 <div><img src={logo} alt="logo_image" width={250} /></div>
               </Fade>
               <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
-                <div className='my-3' >
+                <div className='mb-3' >
                   <h2 className="title wow fadeInUp desktopbaseerp_heading " data-wow-duration="600ms">Desktop Software  <span class="yllow_txt">Solution</span></h2>
                 </div>
               </Fade>
