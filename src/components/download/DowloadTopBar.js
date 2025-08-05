@@ -22,7 +22,7 @@ const DowloadTopBar = ({ val }) => {
                                     <div className="page-title-box text-center">
                                         <Fade direction='up' triggerOnce={false} duration={1000} delay={9}>
                                             <h5 className="title  wow fadeInUp" data-wow-duration="600ms">{name}</h5>
-                                            <H2>herelo</H2>
+                                           
                                         </Fade>
                                     </div>
                                 </div>
